@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오사카 여행 · 2026.12.10 – 12.13</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">OSAKA <span>2026</span></a>
+      <nav class="nav">
+        <a href="#flight">항공</a>
+        <a href="#stay">숙소</a>
+        <a href="#days">일정</a>
+        <a href="#shopping">쇼핑</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 전환">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">3박 4일 · 오사카 & 고베</p>
+        <h1>오사카 여행</h1>
+        <p class="hero-date">2026.12.10 (목) – 12.13 (일)</p>
+        <p id="dday" class="dday" hidden></p>
+      </div>
+    </section>
+
+    <div class="container content">
+
+      <!-- 개요 -->
+      <section class="section">
+        <h2 class="section-title">한눈에 보기</h2>
+        <ol class="overview">
+          <li><a href="#day1"><b>DAY 1</b><span>12.10 목</span><em>오사카 시내</em></a></li>
+          <li><a href="#day2"><b>DAY 2</b><span>12.11 금</span><em>오사카성 러닝 · 고베</em></a></li>
+          <li><a href="#day3"><b>DAY 3</b><span>12.12 토</span><em>사카이 · 나카노시마 · 교바시</em></a></li>
+          <li><a href="#day4"><b>DAY 4</b><span>12.13 일</span><em>타코야키 · 귀국</em></a></li>
+        </ol>
+        <p class="note">상세 일정과 먹는 건 느낌 오는 대로 🍜</p>
+      </section>
+
+      <!-- 항공 -->
+      <section id="flight" class="section">
+        <h2 class="section-title">✈️ 항공권</h2>
+        <div class="grid-2">
+          <article class="ticket">
+            <div class="ticket-head">
+              <span class="tag">출국</span>
+              <span class="ticket-date">2026.12.10 (목)</span>
+            </div>
+            <div class="ticket-route">
+              <div><strong>08:55</strong><span>인천 ICN T1</span></div>
+              <div class="ticket-line" aria-hidden="true"></div>
+              <div class="right"><strong>10:45</strong><span>간사이 KIX</span></div>
+            </div>
+            <div class="ticket-foot">파라타항공 <b>WE511</b></div>
+          </article>
+
+          <article class="ticket">
+            <div class="ticket-head">
+              <span class="tag tag-alt">귀국</span>
+              <span class="ticket-date">2026.12.13 (일)</span>
+            </div>
+            <div class="ticket-route">
+              <div><strong>11:45</strong><span>간사이 KIX T1</span></div>
+              <div class="ticket-line" aria-hidden="true"></div>
+              <div class="right"><strong>13:45</strong><span>인천 ICN</span></div>
+            </div>
+            <div class="ticket-foot">파라타항공 <b>WE512</b></div>
+          </article>
+        </div>
+        <p class="note">🧳 수하물 각 15kg</p>
+      </section>
+
+      <!-- 숙소 -->
+      <section id="stay" class="section">
+        <h2 class="section-title">🏨 숙소</h2>
+        <article class="card stay">
+          <div>
+            <h3>서비스 아파트 11 난바2</h3>
+            <p class="muted">3박 · 12.10 – 12.13</p>
+            <p class="address">Apartment Hotel 11 Namba2</p>
+          </div>
+          <a class="btn"
+             href="https://www.google.com/maps/search/?api=1&query=Apartment+Hotel+11+Namba2"
+             target="_blank" rel="noopener">지도 보기</a>
+        </article>
+      </section>
+
+      <!-- 일정 -->
+      <section id="days" class="section">
+        <h2 class="section-title">🗓️ 일정</h2>
+
+        <div class="timeline">
+          <!-- DAY 1 -->
+          <article id="day1" class="day">
+            <div class="day-badge"><b>1</b></div>
+            <div class="day-body card">
+              <header class="day-head">
+                <span class="day-label">DAY 1 · 12.10 목</span>
+                <h3>오사카 시내</h3>
+                <p class="muted">난바 · 우메다 · 도톤보리</p>
+              </header>
+              <p>급할 거 없음. 천천히 숙소 와서 짐 풀고 오사카 시내 구경 🚶</p>
+            </div>
+          </article>
+
+          <!-- DAY 2 -->
+          <article id="day2" class="day">
+            <div class="day-badge"><b>2</b></div>
+            <div class="day-body card">
+              <header class="day-head">
+                <span class="day-label">DAY 2 · 12.11 금</span>
+                <h3>오사카성 러닝 · 고베</h3>
+              </header>
+              <ul class="plan">
+                <li>
+                  <span class="when">오전</span>
+                  <div>
+                    <strong>오사카성 러닝 🏃</strong> <span class="pill">상황에 따라 취소 가능</span>
+                    <p class="muted">숙소 앞 지하철로 이동, 지하철만 약 10분</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="when">오후</span>
+                  <div><strong>고베</strong></div>
+                </li>
+              </ul>
+              <div class="transit">
+                <h4>🚃 전철 기준 평균 시간</h4>
+                <dl>
+                  <div><dt>사쿠라가와 → 고베산노미야</dt><dd>약 45분</dd></div>
+                </dl>
+              </div>
+            </div>
+          </article>
+
+          <!-- DAY 3 -->
+          <article id="day3" class="day">
+            <div class="day-badge"><b>3</b></div>
+            <div class="day-body card">
+              <header class="day-head">
+                <span class="day-label">DAY 3 · 12.12 토</span>
+                <h3>이곳저곳</h3>
+                <p class="muted">사카이 → 나카노시마 + 기타하마 → 교바시</p>
+              </header>
+              <ul class="plan">
+                <li>
+                  <span class="when">사카이</span>
+                  <div>
+                    <strong>사카이 덴쇼칸</strong> · 사카이 시청
+                    <p class="muted">사카이 칼 마켓, 손톱깎이 살 것 🔪</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="when">기타하마<br />나카노시마</span>
+                  <div>
+                    <strong>강변 산책 · 카페</strong>
+                    <p class="highlight">✨ 오사카 빛의 르네상스 2026<br />
+                      <small>12.11 – 12.25 · 오사카시청 주변 ~ 나카노시마공원</small></p>
+                  </div>
+                </li>
+                <li>
+                  <span class="when">교바시</span>
+                  <div>
+                    <strong>저녁식사 🍻</strong>
+                    <p class="muted">이자카야, 라멘, 오코노미야키, 스시집 많음 · 현지인 퇴근길에 많이 찾는 곳</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="transit">
+                <h4>🚃 전철 기준 평균 시간</h4>
+                <dl>
+                  <div><dt>숙소 → 사카이역</dt><dd>25–30분</dd></div>
+                  <div><dt>사카이히가시역 → 기타하마역</dt><dd>26–30분</dd></div>
+                  <div><dt>교바시역 → 숙소</dt><dd>23–26분</dd></div>
+                </dl>
+              </div>
+            </div>
+          </article>
+
+          <!-- DAY 4 -->
+          <article id="day4" class="day">
+            <div class="day-badge"><b>4</b></div>
+            <div class="day-body card">
+              <header class="day-head">
+                <span class="day-label">DAY 4 · 12.13 일</span>
+                <h3>복귀</h3>
+                <p class="muted">난바역 앞 시장에서 타코야키 🐙 먹고 간사이 공항으로</p>
+              </header>
+              <ul class="plan">
+                <li>
+                  <span class="when">08:30<br />/ 09:00</span>
+                  <div>
+                    <strong>난바 → 간사이공항 (라피트)</strong> · 약 38분
+                    <p class="muted">이 중 하나는 타야 출발 2시간 전 도착 가능</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="when">09:45</span>
+                  <div><strong>간사이 공항 도착</strong> <span class="pill">비행기 2시간 전</span></div>
+                </li>
+                <li>
+                  <span class="when">11:45</span>
+                  <div><strong>WE512 출발</strong></div>
+                </li>
+              </ul>
+              <div class="callout">
+                <strong>⚠️ 확인 필요</strong>
+                <p>면세 시스템 변경으로 공항에서 시간이 얼마나 걸릴지 더 알아볼 것!</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 쇼핑 -->
+      <section id="shopping" class="section">
+        <h2 class="section-title">🛍️ 쇼핑</h2>
+        <ul class="chips">
+          <li>스탠다드 프로덕트</li>
+          <li>세리에</li>
+          <li>GU</li>
+          <li>유니클로</li>
+          <li>사카이 칼시장 손톱깎이</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container muted">오사카 일정 ver1.0</div>
+  </footer>
+</body>
+</html>
