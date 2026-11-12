@@ -636,6 +636,51 @@ p {
   white-space: nowrap;
 }
 
+.shop {
+  margin-top: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
+
+.shop h4 {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.shop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop li {
+  padding: 4px 0;
+  font-size: 0.9rem;
+}
+
+.shop-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.shop-tags span {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.shop-tags .etc {
+  background: none;
+  border: none;
+  padding: 2px 0;
+  color: var(--muted);
+}
+
 .callout {
   margin-top: 14px;
   padding: 12px 16px;
@@ -643,25 +688,6 @@ p {
   background: var(--warn-bg);
   border: 1px solid var(--warn-border);
   font-size: 0.9rem;
-}
-
-/* ---------- Shopping ---------- */
-.chips {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.chips li {
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  font-weight: 500;
 }
 
 /* ---------- Footer ---------- */

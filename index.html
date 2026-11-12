@@ -15,9 +15,7 @@
         <a href="#weather">날씨</a>
         <a href="#flight">항공</a>
         <a href="#stay">숙소</a>
-        <a href="#days">일정</a>
-        <a href="#shopping">쇼핑</a>
-      </nav>
+        <a href="#days">일정</a>      </nav>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 전환">🌙</button>
     </div>
   </header>
@@ -45,7 +43,7 @@
         <h2 class="section-title">한눈에 보기</h2>
         <ol class="overview">
           <li><a href="#day1"><b>DAY 1</b><span>12.10 목</span><em>오사카 시내</em></a></li>
-          <li><a href="#day2"><b>DAY 2</b><span>12.11 금</span><em>오사카성 러닝 · 고베</em></a></li>
+          <li><a href="#day2"><b>DAY 2</b><span>12.11 금</span><em>고베 · 오사카 시내</em></a></li>
           <li><a href="#day3"><b>DAY 3</b><span>12.12 토</span><em>사카이 · 나카노시마 · 교바시</em></a></li>
           <li><a href="#day4"><b>DAY 4</b><span>12.13 일</span><em>타코야키 · 귀국</em></a></li>
         </ol>
@@ -124,9 +122,21 @@
               <header class="day-head">
                 <span class="day-label">DAY 1 · 12.10 목</span>
                 <h3>오사카 시내</h3>
-                <p class="muted">난바 · 우메다 · 도톤보리</p>
+                <p class="muted">난바 · 도톤보리</p>
               </header>
               <p>급할 거 없음. 천천히 숙소 와서 짐 풀고 오사카 시내 구경 🚶</p>
+              <div class="shop">
+                <h4>🛍️ 쇼핑</h4>
+                <ul>
+                  <li><strong>돈키호테</strong></li>
+                  <li>
+                    <strong>난바 시티 &amp; 난바 파크스</strong>
+                    <div class="shop-tags">
+                      <span>스탠다드 프로덕트</span><span>세리에</span><span>GU</span><span>유니클로</span><span class="etc">등</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </article>
 
@@ -136,19 +146,18 @@
             <div class="day-body card">
               <header class="day-head">
                 <span class="day-label">DAY 2 · 12.11 금</span>
-                <h3>오사카성 러닝 · 고베</h3>
+                <h3>고베 · 오사카 시내</h3>
               </header>
               <ul class="plan">
                 <li>
-                  <span class="when">오전</span>
-                  <div>
-                    <strong>오사카성 러닝 🏃</strong> <span class="pill">상황에 따라 취소 가능</span>
-                    <p class="muted">숙소 앞 지하철로 이동, 지하철만 약 10분</p>
-                  </div>
+                  <span class="when">낮</span>
+                  <div><strong>고베</strong></div>
                 </li>
                 <li>
-                  <span class="when">오후</span>
-                  <div><strong>고베</strong></div>
+                  <span class="when">늦은 오후</span>
+                  <div>
+                    <strong>오사카 복귀 · 시내 구경</strong>
+                  </div>
                 </li>
               </ul>
               <div class="transit">
@@ -156,6 +165,18 @@
                 <dl>
                   <div><dt>사쿠라가와 → 고베산노미야</dt><dd>약 45분</dd></div>
                 </dl>
+              </div>
+              <div class="shop">
+                <h4>🛍️ 쇼핑</h4>
+                <ul>
+                  <li><strong>돈키호테</strong></li>
+                  <li>
+                    <strong>난바 시티 &amp; 난바 파크스</strong>
+                    <div class="shop-tags">
+                      <span>스탠다드 프로덕트</span><span>세리에</span><span>GU</span><span>유니클로</span><span class="etc">등</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </article>
@@ -201,6 +222,15 @@
                   <div><dt>교바시역 → 숙소</dt><dd>23–26분</dd></div>
                 </dl>
               </div>
+              <div class="shop">
+                <h4>🛍️ 쇼핑</h4>
+                <ul>
+                  <li>
+                    <strong>사카이 칼 시장</strong>
+                    <div class="shop-tags"><span>손톱깎이</span></div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </article>
 
@@ -237,18 +267,6 @@
             </div>
           </article>
         </div>
-      </section>
-
-      <!-- 쇼핑 -->
-      <section id="shopping" class="section">
-        <h2 class="section-title">🛍️ 쇼핑</h2>
-        <ul class="chips">
-          <li>스탠다드 프로덕트</li>
-          <li>세리에</li>
-          <li>GU</li>
-          <li>유니클로</li>
-          <li>사카이 칼시장 손톱깎이</li>
-        </ul>
       </section>
     </div>
   </main>
