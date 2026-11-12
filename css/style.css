@@ -177,6 +177,116 @@ p {
   font-size: 0.9rem;
 }
 
+.today {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.today b {
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Weather ---------- */
+.weather {
+  padding: 20px;
+}
+
+.weather-now {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.weather-icon {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.weather-temp {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.weather-desc {
+  font-weight: 600;
+}
+
+.weather-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.weather-week {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.weather-week:empty {
+  display: none;
+}
+
+.weather-week li {
+  padding: 8px 2px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.weather-week li.is-trip {
+  background: var(--accent-soft);
+}
+
+.weather-week .wd {
+  color: var(--muted);
+}
+
+.weather-week .wi {
+  display: block;
+  font-size: 1.4rem;
+  margin: 2px 0;
+}
+
+.weather-week .hi {
+  font-weight: 700;
+}
+
+.weather-week .lo {
+  color: var(--muted);
+}
+
+.weather-week .rain {
+  display: block;
+  color: var(--accent-2);
+  font-size: 0.75rem;
+}
+
+.day-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-2-soft);
+  color: var(--text);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 /* ---------- Sections ---------- */
 .content {
   padding-bottom: 56px;
@@ -575,6 +685,11 @@ p {
 
   .overview {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-week {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 8px;
   }
 
   .stay {

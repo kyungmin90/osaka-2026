@@ -12,6 +12,7 @@
     <div class="container header-inner">
       <a class="logo" href="#top">OSAKA <span>2026</span></a>
       <nav class="nav">
+        <a href="#weather">날씨</a>
         <a href="#flight">항공</a>
         <a href="#stay">숙소</a>
         <a href="#days">일정</a>
@@ -29,6 +30,11 @@
         <h1>오사카 여행</h1>
         <p class="hero-date">2026.12.10 (목) – 12.13 (일)</p>
         <p id="dday" class="dday" hidden></p>
+        <p class="today">
+          <span>오늘 <b id="today-kr">-</b></span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>오사카 <b id="clock-jp">--:--</b></span>
+        </p>
       </div>
     </section>
 
@@ -44,6 +50,18 @@
           <li><a href="#day4"><b>DAY 4</b><span>12.13 일</span><em>타코야키 · 귀국</em></a></li>
         </ol>
         <p class="note">상세 일정과 먹는 건 느낌 오는 대로 🍜</p>
+      </section>
+
+      <!-- 날씨 -->
+      <section id="weather" class="section">
+        <h2 class="section-title">🌤️ 오사카 날씨</h2>
+        <div class="card weather">
+          <div id="weather-now" class="weather-now">
+            <p class="muted">날씨를 불러오는 중…</p>
+          </div>
+          <ul id="weather-week" class="weather-week"></ul>
+        </div>
+        <p id="weather-note" class="note"></p>
       </section>
 
       <!-- 항공 -->
