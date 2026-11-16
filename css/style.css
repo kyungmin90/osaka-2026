@@ -319,7 +319,7 @@ p {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
@@ -433,6 +433,17 @@ p {
 }
 
 .ticket-foot b {
+  color: var(--text);
+}
+
+.ticket-checkin {
+  padding: 10px 18px 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.ticket-checkin b {
   color: var(--text);
 }
 
@@ -756,6 +767,10 @@ p {
 
   .overview {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overview li:first-child {
+    grid-column: span 2;
   }
 
   .weather-week {
