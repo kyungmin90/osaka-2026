@@ -694,6 +694,12 @@ p {
   white-space: nowrap;
 }
 
+.btns {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
 .map-btn:hover {
   border-color: var(--accent-2);
   color: var(--accent-2);
