@@ -2,38 +2,6 @@
 
 const TRIP_START = new Date(2026, 11, 10); // 2026-12-10
 const TRIP_END = new Date(2026, 11, 13);   // 2026-12-13
-const THEME_KEY = 'osaka.theme';
-
-// ---------- 테마 ----------
-function initTheme() {
-  const toggle = document.getElementById('theme-toggle');
-  let theme;
-  try {
-    theme = localStorage.getItem(THEME_KEY);
-  } catch {
-    theme = null;
-  }
-  if (!theme) {
-    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  const apply = () => {
-    document.documentElement.dataset.theme = theme;
-    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-  };
-
-  toggle.addEventListener('click', () => {
-    theme = theme === 'dark' ? 'light' : 'dark';
-    try {
-      localStorage.setItem(THEME_KEY, theme);
-    } catch {
-      /* 저장 실패는 무시 */
-    }
-    apply();
-  });
-
-  apply();
-}
 
 // ---------- D-day ----------
 function initDday() {
@@ -197,7 +165,6 @@ async function initWeather() {
     : '여행 날짜 예보는 출발 약 2주 전부터 각 DAY 카드에 자동으로 표시돼요. (Open-Meteo 제공)';
 }
 
-initTheme();
 initDday();
 initClock();
 initWeather();
