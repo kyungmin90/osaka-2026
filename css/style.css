@@ -273,6 +273,18 @@ p {
   margin-bottom: 16px;
 }
 
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-head .section-title {
+  margin-bottom: 0;
+}
+
 .note {
   margin-top: 12px;
   font-size: 0.9rem;
