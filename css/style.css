@@ -655,9 +655,35 @@ p {
   background: var(--accent-2-soft);
 }
 
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.food-grid .food {
+  margin-top: 0;
+}
+
 .food h4 {
   font-size: 0.85rem;
   margin-bottom: 8px;
+}
+
+.food h5 {
+  margin: 12px 0 2px;
+  font-size: 0.8rem;
+  color: var(--accent-2);
+}
+
+.food h4 + h5 {
+  margin-top: 0;
+}
+
+.food h5 + p {
+  padding: 6px 0;
+  font-size: 0.85rem;
 }
 
 .food ul {
@@ -775,7 +801,19 @@ p {
 
 /* ---------- Mobile ---------- */
 @media (max-width: 600px) {
+  .nav {
+    gap: 0;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
   .nav a {
+    flex-shrink: 0;
     padding: 6px 6px;
     font-size: 0.85rem;
   }
